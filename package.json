@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "main": "dest/index.js",
+  "types": "dest/index.d.ts",
   "scripts": {
     "prepare": "tsc",
     "test": "jest"
@@ -19,12 +20,31 @@
   "bugs": {
     "url": "https://github.com/stkay/gyaonup/issues"
   },
+
   "homepage": "https://github.com/stkay/gyaonup#readme",
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
   "devDependencies": {
+    "@types/form-data": "^2.2.1",
+    "@types/jest": "^23.0.0",
     "jest": "^23.1.0",
-    "tsc": "^1.20150623.0"
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.9.1"
   },
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "form-data": "^2.3.2"
   }
 }

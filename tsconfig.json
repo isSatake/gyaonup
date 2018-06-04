@@ -1,14 +1,21 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "module": "commonjs",
-    "target": "ES6",
-    "sourceMap": true,
-    "outDir": "dest"
+    "lib": ["es2017", "es7", "es6", "dom"],
+    "declaration": true,
+    "outDir": "dest",
+    "strict": true,
+    "esModuleInterop": true
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "dest"
   ],
   "include": [
-    "src/*.ts"
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "**/__tests__"
   ]
 }
