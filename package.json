@@ -1,0 +1,30 @@
+{
+  "name": "gyaonup",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dest/index.js",
+  "scripts": {
+    "prepare": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stkay/gyaonup.git"
+  },
+  "keywords": [
+    "gyaon"
+  ],
+  "author": "stkay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stkay/gyaonup/issues"
+  },
+  "homepage": "https://github.com/stkay/gyaonup#readme",
+  "devDependencies": {
+    "jest": "^23.1.0",
+    "tsc": "^1.20150623.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
